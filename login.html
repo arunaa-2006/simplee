@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function redirectToWelcome(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = "welcome.html"; // Redirect to Welcome Page
+        }
+    </script>
 </head>
 <body>
-    <form>
+    <form onsubmit="redirectToWelcome(event)">
        <label>email:</label>
        <input type="text" placeholder="Enter your email"> <br>
        <label>Password</label>
        <input type="Password" placeholder="Enter your password">
        <button >Submit</button>
        <link rel="stylesheet" href="css.html/slogin.css">
+       <a href="signup.html">create account</a>
+       
     </form>
-    <a href ="https://www.google.com/search?q=mern+stack+development+tutorial&oq=&gs_lcrp=EgZjaHJvbWUqCQgCECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIPCAMQLhgnGK8BGMcBGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQo2NzYwMGowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank">knowafest</a>
-    <a href ="https://www.google.com/search?q=mern+stack+full+form&sca_esv=f03bab0fa4fcd579&sxsrf=ADLYWILOB0AG7b--WjGZ0Y9OTvIgdUL5aA%3A1734500674637&ei=QmFiZ5XEJs2J4-EP2tqo8Ak&oq=mern+stack+development+tutorial&gs_lp=Egxnd3Mtd2l6LXNlcnAiH21lcm4gc3RhY2sgZGV2ZWxvcG1lbnQgdHV0b3JpYWwqAggAMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSODOA1AAWABwAHgCkAEAmAEAoAEAqgEAuAEByAEAmAIBoAIFmAMAiAYBkAYIkgcBMaAHAA&sclient=gws-wiz-serp" target="_self">mern</a>
-</body>
+    </body>
+    <br>
 </html>
